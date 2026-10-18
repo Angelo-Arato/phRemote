@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.cache/
+data/
+*.log
+desktop/native/phremote-input-macos
+server/data/
+.DS_Store

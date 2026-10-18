@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-18",
+  "automated_tests": {
+    "passed": 32,
+    "failed": 0,
+    "scope": [
+      "client/cryptography 10",
+      "input lifecycle 9 (mock native process)",
+      "Linux monitor geometry 1 (10 Python stub cases)",
+      "relay 12 (real loopback sockets)"
+    ]
+  },
+  "syntax": {
+    "files": 20,
+    "languages": [
+      "JavaScript",
+      "Python"
+    ]
+  },
+  "desktop": {
+    "development": "passed",
+    "packaged_mac_arm64": "passed",
+    "checks": [
+      "real Electron preload and renderer",
+      "real local relay registration",
+      "address book save/render",
+      "window preview screenshot"
+    ],
+    "real_screen_capture_tested": false,
+    "real_remote_input_tested": false
+  },
+  "platforms": {
+    "darwin-arm64": "bundle and runtime smoke verified; ad-hoc signed",
+    "darwin-x64": "bundle headers/archive/signature verified; not executed on Intel",
+    "win32-x64": "portable package and PE header verified; not executed on Windows",
+    "linux-x64": "portable package and ELF header verified; not executed on Linux"
+  },
+  "hosting": {
+    "render": "Blueprint prepared; not deployed",
+    "public_relay_url": null
+  },
+  "reverse_engineering": {
+    "supremo_version": "4.11.6.2928",
+    "scope": "static package/metadata/localization",
+    "native_decompilation": "Ghidra startup timed out after 330s; no successful Supremo function decompilation",
+    "supremo_wire_protocol_recovered": false
+  }
+}

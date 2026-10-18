@@ -1,0 +1,285 @@
+{
+  "artifact": {
+    "installed_path": "/Applications/Supremo.app",
+    "version": "4.11.6.2928",
+    "original_sha256": "d3390311f472de55c88fea6ee5ab5c2f12a740cbea6f55445201275f95339152",
+    "arm64_sha256": "7358dda805cbfd10c9f514cd47f7405b767adaf404f5e44dcc5ab9f270f3eec4",
+    "derivation": "lipo -thin arm64; only a temporary copy was analyzed"
+  },
+  "observations": [
+    {
+      "evidence_id": "ev_264314b5b37faa774135f7cb6ca73b8e10c12b5ccfb3a96c9f8ff6d04e3a4fde",
+      "subject": {
+        "name": "Supremo-arm64",
+        "digest": {
+          "sha256": "7358dda805cbfd10c9f514cd47f7405b767adaf404f5e44dcc5ab9f270f3eec4"
+        },
+        "local_path": "/private/var/folders/3b/z1mzry493_3069g3_jmqkw9r0000gn/T/supremo-rea-rdsncu8e/Supremo-arm64",
+        "format": "mach-o",
+        "architecture": "arm64"
+      },
+      "provider": {
+        "id": "native-macos",
+        "name": "macOS native inspection utilities",
+        "version": null
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_plist",
+      "parameters": {
+        "path": "/Applications/Supremo.app/Contents/Info.plist"
+      },
+      "raw_result": null,
+      "normalized_result": {
+        "format": "binary",
+        "value": {
+          "CFBundleURLTypes": [
+            {
+              "CFBundleURLName": "URLHandlerTestApp",
+              "CFBundleURLSchemes": [
+                "supremo"
+              ]
+            }
+          ],
+          "NSNetworkVolumesUsageDescription": "The reason for accessing files on a network volume",
+          "NSDocumentsFolderUsageDescription": "The reason for accessing the Documents folder",
+          "CFBundleIconFile": "Supremo.icns",
+          "CFBundleName": "Supremo",
+          "NSRemindersUsageDescription": "The reason for accessing the reminders",
+          "NSDownloadsFolderUsageDescription": "The reason for accessing the Downloads folder",
+          "NSBluetoothAlwaysUsageDescription": "The reason for accessing the Bluetooth interface",
+          "NSRemovableVolumesUsageDescription": "The reason for accessing files on a removable volume",
+          "SUFeedURL": "https://www.nanosystems.com/AutoUpdateS/macOS/stable/SupremoCast.xml",
+          "SUEnableAutomaticChecks": true,
+          "NSDesktopFolderUsageDescription": "The reason for accessing the Desktop folder",
+          "LSApplicationCategoryType": "public.app-category.utilities",
+          "CFBundleDisplayName": "Supremo",
+          "NSHighResolutionCapable": true,
+          "NSCameraUsageDescription": "The reason for accessing the camera",
+          "CFBundleShortVersionString": "4.11.6.2928",
+          "CFBundleAllowMixedLocalizations": true,
+          "CFBundleSupportedPlatforms": [
+            "MacOSX"
+          ],
+          "CFBundlePackageType": "APPL",
+          "SUAutomaticallyUpdate": true,
+          "CFBundleVersion": "4.11.6.2928",
+          "NSSpeechRecognitionUsageDescription": "The reason for requesting to send user data to Apple's speech recognition servers",
+          "NSMotionUsageDescription": "The reason for accessing the accelerometer",
+          "NSMicrophoneUsageDescription": "The reason for accessing the microphone",
+          "CFBundleIdentifier": "Supremo",
+          "NSLocationUsageDescription": "The reason for accessing the location information of the user",
+          "NSCalendarsUsageDescription": "The reason for accessing the calendar data",
+          "CFBundleExecutable": "Supremo",
+          "LSMinimumSystemVersion": "10.11",
+          "CFBundleSignature": "????",
+          "SUPublicEDKey": "q/uR5Hwx7SPuitZmdrGIBRs7ID5z5vT7XfYhFSejqQw=",
+          "SUScheduledCheckInterval": 14400,
+          "ITSAppUsesNonExemptEncryption": false,
+          "NSContactsUsageDescription": "The reason for accessing the contacts"
+        },
+        "bundle": {
+          "identifier": "Supremo",
+          "executable": "Supremo",
+          "name": "Supremo",
+          "version": "4.11.6.2928",
+          "short_version": "4.11.6.2928"
+        },
+        "source_path": "/Applications/Supremo.app/Contents/Info.plist",
+        "provenance": [
+          {
+            "tool": "file",
+            "command": [
+              "/usr/bin/file",
+              "-b",
+              "$PLIST"
+            ],
+            "tool_version": null,
+            "version_reason": "Tool exposes no uniform stable version flag; executable SHA-256 is a prelaunch file sample and does not prove atomic OS image binding.",
+            "executable_sha256": "8014815e1028410f48966f1880f99c842a5678cf2fcaa010e8d7e9e498f651d0",
+            "exit": {
+              "code": 0,
+              "signal": null
+            },
+            "stdout_bytes": 27,
+            "stderr_bytes": 0
+          },
+          {
+            "tool": "plutil",
+            "command": [
+              "/usr/bin/plutil",
+              "-convert",
+              "json",
+              "-o",
+              "-",
+              "--",
+              "$PLIST"
+            ],
+            "tool_version": null,
+            "version_reason": "Tool exposes no uniform stable version flag; executable SHA-256 is a prelaunch file sample and does not prove atomic OS image binding.",
+            "executable_sha256": "5ec63ed0506b7676b30fe69d00ae48c689daf1badc1e786a18166b01b615e8ac",
+            "exit": {
+              "code": 0,
+              "signal": null
+            },
+            "stdout_bytes": 2021,
+            "stderr_bytes": 0
+          }
+        ],
+        "limitations": []
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [],
+      "relationship_coverage": null,
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/Applications/Supremo.app/Contents/Info.plist"
+        }
+      ],
+      "evidence_links": []
+    },
+    {
+      "evidence_id": "ev_0be141119b841a22983eeb6ee986cf09cf70717fa38336784c7f6a1b77f05992",
+      "subject": {
+        "name": "Supremo-arm64",
+        "digest": {
+          "sha256": "7358dda805cbfd10c9f514cd47f7405b767adaf404f5e44dcc5ab9f270f3eec4"
+        },
+        "local_path": "/private/var/folders/3b/z1mzry493_3069g3_jmqkw9r0000gn/T/supremo-rea-rdsncu8e/Supremo-arm64",
+        "format": "mach-o",
+        "architecture": "arm64"
+      },
+      "provider": {
+        "id": "rea-analysis-view",
+        "name": "REA analysis view projection",
+        "version": "1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis-view",
+      "operation": "inspect_analysis_view",
+      "parameters": {
+        "parent_evidence_id": "ev_20b7cda25cadaf3f703721db5b801877b238f85531b6f9d899211f129414f63f",
+        "view": {
+          "kind": "summary"
+        }
+      },
+      "raw_result": null,
+      "normalized_result": {
+        "kind": "summary",
+        "view": {
+          "kind": "summary"
+        },
+        "parent_evidence_id": "ev_20b7cda25cadaf3f703721db5b801877b238f85531b6f9d899211f129414f63f",
+        "parent_operation": "inspect_macho",
+        "parent_digest": "20b7cda25cadaf3f703721db5b801877b238f85531b6f9d899211f129414f63f",
+        "view_digest": "bdd78f99f624bd8450e1eb3ccb540efd7c034fe414e4df7d6cddd3c740ea824d",
+        "artifact": {
+          "path": "/private/var/folders/3b/z1mzry493_3069g3_jmqkw9r0000gn/T/supremo-rea-rdsncu8e/Supremo-arm64",
+          "sha256": "7358dda805cbfd10c9f514cd47f7405b767adaf404f5e44dcc5ab9f270f3eec4"
+        },
+        "coverage": {
+          "status": "complete-within-view",
+          "examined": 4901,
+          "total": 4901,
+          "next_offset": null,
+          "exhausted": true
+        },
+        "limitations": [
+          "Imports and exports combine dyld_info and nm; stripped or toolchain-hidden symbols may be absent.",
+          "Merged nm/dyld_info results may be incomplete for stripped binaries.",
+          "dyld_info textual imports may omit chained or toolchain-unsupported metadata.",
+          "vtool output is retained as provenance but only otool build metadata is normalized."
+        ],
+        "unknowns": [
+          "Native tools did not report exhaustive imports, exports; page exhaustion does not establish absence of unreturned rows."
+        ],
+        "summary": {
+          "format": "mach-o",
+          "selected_architecture": {
+            "name": "arm64",
+            "container_file_offset": 0
+          },
+          "endian": "little",
+          "word_size": 64,
+          "file_type": "2",
+          "flags": [
+            "0x00a00085"
+          ],
+          "uuid": "B4F18A91-E1D7-3518-A83D-1F636CA2F29B",
+          "collections": {
+            "entrypoints": {
+              "returned": 1,
+              "total": 1,
+              "exhaustive": true
+            },
+            "architectures": {
+              "returned": 1,
+              "total": 1,
+              "exhaustive": true
+            },
+            "build_metadata": {
+              "returned": 1,
+              "total": 1,
+              "exhaustive": true
+            },
+            "load_commands": {
+              "returned": 50,
+              "total": 50,
+              "exhaustive": true
+            },
+            "dependencies": {
+              "returned": 29,
+              "total": 29,
+              "exhaustive": true
+            },
+            "imports": {
+              "returned": 1060,
+              "total": null,
+              "exhaustive": false
+            },
+            "exports": {
+              "returned": 3751,
+              "total": null,
+              "exhaustive": false
+            },
+            "segments": {
+              "returned": 8,
+              "total": 8,
+              "exhaustive": true
+            }
+          },
+          "provenance_count": 7,
+          "limitation_count": 4
+        }
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Imports and exports combine dyld_info and nm; stripped or toolchain-hidden symbols may be absent.",
+        "Merged nm/dyld_info results may be incomplete for stripped binaries.",
+        "dyld_info textual imports may omit chained or toolchain-unsupported metadata.",
+        "vtool output is retained as provenance but only otool build metadata is normalized."
+      ],
+      "relationship_coverage": null,
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/private/var/folders/3b/z1mzry493_3069g3_jmqkw9r0000gn/T/supremo-rea-rdsncu8e/Supremo-arm64"
+        }
+      ],
+      "evidence_links": [
+        "ev_20b7cda25cadaf3f703721db5b801877b238f85531b6f9d899211f129414f63f"
+      ]
+    }
+  ],
+  "limitations": [
+    "Ghidra analysis did not finish within its 330000 ms startup budget; no successful native function decompilation of Supremo is claimed.",
+    "The complete Mach-O parent evidence was not exported before target closure. The stored summary is intact, but it is not the full parent record.",
+    "REA 6.5.0 atomic export reported staged-file identity/cleanup errors on the project volume. Saved observations are the complete inline tool receipts, not a canonical session bundle.",
+    "No application runtime, remote sessions or vendor endpoints were exercised."
+  ]
+}

@@ -1,0 +1,10 @@
+{$PHREMOTE_DOMAIN} {
+    @relay path /ws /health
+    handle @relay {
+        reverse_proxy relay:8787
+    }
+
+    handle {
+        respond "Not found" 404
+    }
+}

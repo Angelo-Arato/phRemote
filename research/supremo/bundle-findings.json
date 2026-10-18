@@ -1,0 +1,141 @@
+{
+  "app": "/Applications/Supremo.app",
+  "executable": {
+    "path": "/Applications/Supremo.app/Contents/MacOS/Supremo",
+    "size": 148983920,
+    "sha256": "d3390311f472de55c88fea6ee5ab5c2f12a740cbea6f55445201275f95339152"
+  },
+  "toolEvidence": {
+    "file": {
+      "command": [
+        "file",
+        "/Applications/Supremo.app/Contents/MacOS/Supremo"
+      ],
+      "exitCode": 0,
+      "stdout": "/Applications/Supremo.app/Contents/MacOS/Supremo: Mach-O universal binary with 2 architectures: [x86_64:Mach-O 64-bit executable x86_64] [arm64]\n/Applications/Supremo.app/Contents/MacOS/Supremo (for architecture x86_64):\tMach-O 64-bit executable x86_64\n/Applications/Supremo.app/Contents/MacOS/Supremo (for architecture arm64):\tMach-O 64-bit executable arm64\n",
+      "stderr": ""
+    },
+    "dependencies": {
+      "command": [
+        "otool",
+        "-L",
+        "/Applications/Supremo.app/Contents/MacOS/Supremo"
+      ],
+      "exitCode": 0,
+      "stdout": "/Applications/Supremo.app/Contents/MacOS/Supremo (architecture x86_64):\n\t/usr/lib/libiconv.2.dylib (compatibility version 0.0.0, current version 7.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 0.0.0, current version 1351.0.0)\n\t/usr/lib/libobjc.A.dylib (compatibility version 0.0.0, current version 228.0.0)\n\t/usr/lib/libc++abi.dylib (compatibility version 0.0.0, current version 1800.101.0)\n\t/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 0.0.0, current version 3038.1.255)\n\t/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices (compatibility version 0.0.0, current version 1226.0.0)\n\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 0.0.0, current version 3038.1.255)\n\t/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices (compatibility version 0.0.0, current version 65.0.0)\n\t/System/Library/Frameworks/Metal.framework/Versions/A/Metal (compatibility version 0.0.0, current version 366.22.0)\n\t/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit (compatibility version 0.0.0, current version 168.5.0)\n\t/usr/lib/libc++.1.dylib (compatibility version 0.0.0, current version 1800.101.0)\n\t/usr/lib/libz.1.dylib (compatibility version 0.0.0, current version 1.2.12)\n\t/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (compatibility version 0.0.0, current version 275.0.0)\n\t/System/Library/Frameworks/Security.framework/Versions/A/Security (compatibility version 0.0.0, current version 61439.1.1)\n\t/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork (compatibility version 0.0.0, current version 1568.100.1)\n\t/System/Library/PrivateFrameworks/login.framework/Versions/A/login (compatibility version 0.0.0, current version 258.0.0)\n\t@rpath/libcgsqlite3_fde.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore (compatibility version 0.0.0, current version 619.1.26)\n\t/System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia (compatibility version 0.0.0, current version 3145.74.5)\n\t/System/Library/Frameworks/CoreMIDI.framework/Versions/A/CoreMIDI (compatibility version 0.0.0, current version 69.0.0)\n\t/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation (compatibility version 0.0.0, current version 2.0.0)\n\t/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration (compatibility version 0.0.0, current version 1345.0.0)\n\t/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/CoreLocation.framework/Versions/A/CoreLocation (compatibility version 0.0.0, current version 2946.0.37)\n\t/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics (compatibility version 0.0.0, current version 1883.0.0)\n\t/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText (compatibility version 0.0.0, current version 841.0.0)\n\t/System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO (compatibility version 0.0.0, current version 0.0.0)\n/Applications/Supremo.app/Contents/MacOS/Supremo (architecture arm64):\n\t/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 0.0.0, current version 3038.1.255)\n\t/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices (compatibility version 0.0.0, current version 1226.0.0)\n\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 0.0.0, current version 3038.1.255)\n\t/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices (compatibility version 0.0.0, current version 65.0.0)\n\t/System/Library/Frameworks/Metal.framework/Versions/A/Metal (compatibility version 0.0.0, current version 366.22.0)\n\t/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit (compatibility version 0.0.0, current version 168.5.0)\n\t/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (compatibility version 0.0.0, current version 275.0.0)\n\t/System/Library/Frameworks/Security.framework/Versions/A/Security (compatibility version 0.0.0, current version 61439.1.1)\n\t/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork (compatibility version 0.0.0, current version 1568.100.1)\n\t/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/JavaScriptCore (compatibility version 0.0.0, current version 619.1.26)\n\t/System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia (compatibility version 0.0.0, current version 3145.74.5)\n\t/System/Library/Frameworks/CoreMIDI.framework/Versions/A/CoreMIDI (compatibility version 0.0.0, current version 69.0.0)\n\t/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation (compatibility version 0.0.0, current version 2.0.0)\n\t/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration (compatibility version 0.0.0, current version 1345.0.0)\n\t/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/Frameworks/CoreLocation.framework/Versions/A/CoreLocation (compatibility version 0.0.0, current version 2946.0.37)\n\t/usr/lib/libiconv.2.dylib (compatibility version 0.0.0, current version 7.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 0.0.0, current version 1351.0.0)\n\t/usr/lib/libobjc.A.dylib (compatibility version 0.0.0, current version 228.0.0)\n\t/usr/lib/libc++abi.dylib (compatibility version 0.0.0, current version 1800.101.0)\n\t/usr/lib/libc++.1.dylib (compatibility version 0.0.0, current version 1800.101.0)\n\t/usr/lib/libz.1.dylib (compatibility version 0.0.0, current version 1.2.12)\n\t@rpath/libcgsqlite3_fde.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/System/Library/PrivateFrameworks/login.framework/Versions/A/login (compatibility version 0.0.0, current version 258.0.0)\n\t/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics (compatibility version 0.0.0, current version 1883.0.0)\n\t/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText (compatibility version 0.0.0, current version 841.0.0)\n\t/System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO (compatibility version 0.0.0, current version 0.0.0)\n",
+      "stderr": ""
+    },
+    "codesignDisplay": {
+      "command": [
+        "codesign",
+        "-dv",
+        "--verbose=4",
+        "/Applications/Supremo.app"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "Executable=/Applications/Supremo.app/Contents/MacOS/Supremo\nIdentifier=Supremo\nFormat=app bundle with Mach-O universal (x86_64 arm64)\nCodeDirectory v=20500 size=561939 flags=0x10000(runtime) hashes=17550+7 location=embedded\nVersionPlatform=1\nVersionMin=720896\nVersionSDK=983040\nHash type=sha256 size=32\nCandidateCDHash sha1=7f93dea38421223139432e3ce21823ce77710657\nCandidateCDHashFull sha1=7f93dea38421223139432e3ce21823ce77710657\nCandidateCDHash sha256=1fa743208e291cb01b72184322ecc3eb98702447\nCandidateCDHashFull sha256=1fa743208e291cb01b72184322ecc3eb9870244778845b6939268a71f1eb7a62\nHash choices=sha1,sha256\nCMSDigest=3c60fc03467bfbc23511c2c386c1791001fbcfa8cd8cb4c637afff0c12128190\nCMSDigestType=2\nExecutable Segment base=0\nExecutable Segment limit=46170112\nExecutable Segment flags=0x1\nPage size=4096\nCDHash=1fa743208e291cb01b72184322ecc3eb98702447\nSignature size=9067\nAuthority=(unavailable)\nNotarization Ticket=stapled\nInfo.plist=not bound\nTeamIdentifier=LL93ZLFYJ2\nRuntime Version=15.0.0\nSealed Resources version=2 rules=13 files=34\nInternal requirements count=1 size=168\nTotal signatures=1\nChosen signature=1\n"
+    },
+    "codesignEntitlements": {
+      "command": [
+        "codesign",
+        "-d",
+        "--entitlements",
+        "-",
+        "/Applications/Supremo.app"
+      ],
+      "exitCode": 0,
+      "stdout": "[Dict]\n\t[Key] com.apple.security.cs.allow-unsigned-executable-memory\n\t[Value]\n\t\t[Bool] true\n",
+      "stderr": "Executable=/Applications/Supremo.app/Contents/MacOS/Supremo\n"
+    }
+  },
+  "literalMarkers": {
+    "Embarcadero Delphi for Mac OS X 64 bit compiler version 36.0 (29.0.53982.0329)": {
+      "asciiOffset": 34941920,
+      "utf16leOffset": -1
+    },
+    "FMX.Platform.Mac": {
+      "asciiOffset": 55034517,
+      "utf16leOffset": -1
+    },
+    "FMX.Forms": {
+      "asciiOffset": 53838791,
+      "utf16leOffset": -1
+    },
+    "FMX.Skia": {
+      "asciiOffset": 55575877,
+      "utf16leOffset": -1
+    },
+    "Skia4Delphi": {
+      "asciiOffset": 48309737,
+      "utf16leOffset": -1
+    },
+    "CGDisplayStream": {
+      "asciiOffset": 36305377,
+      "utf16leOffset": -1
+    },
+    "CGEventPost": {
+      "asciiOffset": 74505630,
+      "utf16leOffset": -1
+    },
+    "AXIsProcessTrusted": {
+      "asciiOffset": 74497990,
+      "utf16leOffset": -1
+    },
+    "WelsCreateSVCEncoder": {
+      "asciiOffset": -1,
+      "utf16leOffset": 35889184
+    },
+    "TIdTCPClient": {
+      "asciiOffset": 61371195,
+      "utf16leOffset": -1
+    },
+    "TIdTCPConnection": {
+      "asciiOffset": 61383832,
+      "utf16leOffset": -1
+    },
+    "TIdUDP": {
+      "asciiOffset": -1,
+      "utf16leOffset": -1
+    },
+    "ScreenCaptureKit": {
+      "asciiOffset": -1,
+      "utf16leOffset": -1
+    },
+    "SCStream": {
+      "asciiOffset": -1,
+      "utf16leOffset": -1
+    },
+    "RFB 003": {
+      "asciiOffset": -1,
+      "utf16leOffset": -1
+    }
+  },
+  "findings": [
+    {
+      "kind": "observation",
+      "claim": "Delphi compiler marker and FireMonkey/Skia identifiers are embedded in main executable; universal x86_64 and arm64 Mach-O."
+    },
+    {
+      "kind": "observation",
+      "claim": "Two bundled native dylibs: libcgsqlite3_fde.dylib and libopenh264-osx64.dylib; Sparkle framework version 1.27.1 with updater helper app."
+    },
+    {
+      "kind": "observation",
+      "claim": "UI language packs are UTF-8 INI files, not opaque .sil binaries. Italian file contains view/object/property keys and UI text, including shared Windows and macOS features."
+    },
+    {
+      "kind": "inference",
+      "claim": "UI appears implemented with Delphi FireMonkey and Skia; native macOS graphics/input APIs likely integrate capture/control. Markers alone do not establish call paths."
+    },
+    {
+      "kind": "unknown",
+      "claim": "Network session wire format, encryption negotiated per session, rendezvous/relay operation, helper installation, actual capture encoding and platform feature availability not established by this bundle-only pass."
+    },
+    {
+      "kind": "limitation",
+      "claim": "No app launch, process attachment, network requests or user configuration/credential files were read. Localization presence does not prove an option is visible or operational on macOS."
+    }
+  ],
+  "scope": "Installed bundle static inspection; no target execution or network interaction"
+}

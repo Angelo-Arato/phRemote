@@ -1,0 +1,60 @@
+name: phremote
+
+services:
+  relay:
+    image: phremote-relay:local
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    init: true
+    environment:
+      PHREMOTE_HOST: 0.0.0.0
+      PHREMOTE_PORT: "8787"
+      PHREMOTE_STORE: /var/lib/phremote/devices.json
+      PHREMOTE_ALLOWED_ORIGINS: ${PHREMOTE_ALLOWED_ORIGINS:-}
+    expose:
+      - "8787"
+    volumes:
+      - relay_data:/var/lib/phremote
+    read_only: true
+    tmpfs:
+      - /tmp:noexec,nosuid,size=16m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - backend
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on:
+      relay:
+        condition: service_healthy
+    environment:
+      PHREMOTE_DOMAIN: ${PHREMOTE_DOMAIN:?Set PHREMOTE_DOMAIN in deploy/.env}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - edge
+      - backend
+
+networks:
+  edge:
+  backend:
+    internal: true
+
+volumes:
+  relay_data:
+  caddy_data:
+  caddy_config:
